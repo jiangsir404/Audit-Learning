@@ -3,6 +3,9 @@
 开新坑了，马上要找实习了，准备对学过的代码审计知识好好总结一下，欢迎各位师傅star支持一下。
 
 
+
+## 一些资源
+
 ### 代码审计练习题
 
 https://github.com/CHYbeta/Code-Audit-Challenges
