@@ -324,3 +324,6 @@ PHP_FUNCTION(imagettftext)
 
 当然这些方法p牛14年就发出来了， 现在这只是复现一下大佬的挖掘过程， 再膜一哈。
 
+
+
+参考：  https://www.leavesongs.com/PHP/php-bypass-open-basedir-list-directory.html
