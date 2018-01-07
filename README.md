@@ -32,12 +32,15 @@ Xyntax师傅整理的乌云1000个PHP代码审计案例： https://github.com/Xy
 高级PHP应用程序漏洞审核技术(by黑哥）https://github.com/Jyny/pasc2at
 
 
-### 思维导图
+### 思维导图，资料集合
 
 cheybeta师傅的Web学习资料整理: https://github.com/CHYbeta/Web-Security-Learning
 
 https://github.com/CHYbeta/phith0n-Mind-Map
 
+https://github.com/bit4woo/code2sec.com
+
+python 代码审计: https://github.com/bit4woo/python_sec
 
 ## 书籍
 
