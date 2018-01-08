@@ -7,9 +7,9 @@
 - [x] allow_url_fopen 和 allow_url_include
 - [x] 宽字节注入及数据库编码分析
 - [x] 通用代码审计思路
+- [x] 危险的file_put_contents函数
 - [ ] disable_functions 研究
 - [ ] parse_url 函数
-- [ ] 危险的file_put_contents函数
 - [ ] curl
 
 ## 一些资源
