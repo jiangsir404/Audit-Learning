@@ -3,14 +3,15 @@
 开新坑了，准备花一个月的时间对学过的代码审计知识好好总结一下，持续更新，欢迎各位师傅star支持一下。
 
 ## Todo
-- [x] open_basedir 研究
+- [x] open_basedir 绕过研究
 - [x] allow_url_fopen 和 allow_url_include
 - [x] 宽字节注入及数据库编码分析
 - [x] 通用代码审计思路
 - [x] 危险的file_put_contents函数
-- [ ] disable_functions 研究
-- [ ] parse_url 函数
-- [ ] curl
+- [ ] disable_functions 绕过研究
+- [ ] parse_url 函数研究
+- [ ] curl 函数研究
+- [ ] addslashes 函数绕过研究
 
 ## 一些资源
 
