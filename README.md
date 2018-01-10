@@ -43,12 +43,19 @@ https://github.com/bit4woo/code2sec.com
 
 python 代码审计: https://github.com/bit4woo/python_sec
 
-## 书籍
+### 博客
+离别歌:https://www.leavesongs.com/
+
+漏洞时代: http://0day5.com/
+
+lorexxar师傅: http://lorexxar.cn/
+
+### 书籍
 
 《代码审计》
 
 《PHP7内核剖析》 https://github.com/pangudashu/php7-internal
-## 代码审计工具
+### 代码审计工具
 
 cobra： https://github.com/wufeifei/cobra
 
