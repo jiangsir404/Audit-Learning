@@ -30,7 +30,7 @@ Xyntax师傅整理的乌云1000个PHP代码审计案例： https://github.com/Xy
 
 乌云Drops文章备份： https://github.com/SecWiki/wooyun_articles
 
-高级PHP应用程序漏洞审核技术(by黑哥）https://github.com/Jyny/pasc2at
+
 
 
 ### 思维导图，资料集合
@@ -43,12 +43,17 @@ https://github.com/bit4woo/code2sec.com
 
 python 代码审计: https://github.com/bit4woo/python_sec
 
+高级PHP应用程序漏洞审核技术(by黑哥）https://github.com/Jyny/pasc2at
+
 ### 博客
 离别歌:https://www.leavesongs.com/
 
 漏洞时代: http://0day5.com/
 
 lorexxar师傅: http://lorexxar.cn/
+
+知道创宇paper: https://paper.seebug.org/
+
 
 ### 书籍
 
