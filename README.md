@@ -24,12 +24,19 @@ wonderkun师傅的ctf web练习题: https://github.com/wonderkun/CTF_web
 https://github.com/bowu678/php_bugs
 
 
+### 漏洞exp
+推荐一波自己的仓库： https://github.com/jiangsir404/PHP-code-audit
+
+各种开源CMS 各种版本的漏洞以及EXP： https://github.com/Mr5m1th/0day
+
+CMS漏洞测试用例集合： https://github.com/SecWiki/CMS-Hunter
+
+
 ### 乌云 
 
 Xyntax师傅整理的乌云1000个PHP代码审计案例： https://github.com/Xyntax/1000php
 
 乌云Drops文章备份： https://github.com/SecWiki/wooyun_articles
-
 
 
 
@@ -56,10 +63,10 @@ lorexxar师傅: http://lorexxar.cn/
 
 
 ### 书籍
-
 《代码审计》
 
 《PHP7内核剖析》 https://github.com/pangudashu/php7-internal
+
 ### 代码审计工具
 
 cobra： https://github.com/wufeifei/cobra
@@ -67,4 +74,5 @@ cobra： https://github.com/wufeifei/cobra
 Seay源代码审计系统2.1: http://www.cnseay.com/
 
 rips: https://github.com/ripsscanner/rips
+
 
