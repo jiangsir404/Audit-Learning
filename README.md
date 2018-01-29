@@ -8,6 +8,7 @@
 - [x] 宽字节注入及数据库编码分析
 - [x] 通用代码审计思路
 - [x] 危险的file_put_contents函数
+- [x] escapeshellarg 和 escapeshellcmd 函数.md
 - [ ] disable_functions 绕过研究
 - [ ] parse_url 函数研究
 - [ ] curl 函数研究
