@@ -1,3 +1,5 @@
+链接: https://t.zsxq.com/VrnQjeY
+
 ```
 <?php
 本地flag路径为 /data/sublime/php/audit/3/flag.txt

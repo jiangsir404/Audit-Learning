@@ -69,6 +69,8 @@ lorexxar师傅: http://lorexxar.cn/
 
 《PHP7内核剖析》 https://github.com/pangudashu/php7-internal
 
+《深入理解PHP内核》https://github.com/reeze/tipi
+
 ### 代码审计工具
 
 cobra： https://github.com/wufeifei/cobra
