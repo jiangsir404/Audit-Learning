@@ -13,6 +13,8 @@
 - [ ] parse_url 函数研究
 - [ ] curl 函数研究
 - [ ] addslashes 函数绕过研究
+- [ ] move_uploaded_file
+- [ ]  str_shuffle 函数缺陷
 
 ## 一些资源
 

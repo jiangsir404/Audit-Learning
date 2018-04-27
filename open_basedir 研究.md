@@ -87,6 +87,7 @@ PHP_FUNCTION(realpath)
 	}
 }
 ```
+
 open_basedir的验证函数是php_check_open_basedir,我们查看以下这个函数： `main/fopen_wrappers.c`
 
 ```c
