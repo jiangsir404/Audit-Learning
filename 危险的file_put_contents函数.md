@@ -1,3 +1,5 @@
+### 对内容的正则过滤 -- 数组绕过
+
 在EIS上遇到一道文件上传的题，发现过滤了`<`,这样基本很多姿势都无效了，想了很久没做出来这题，赛后才知道是利用数组来绕过, 这里分析了下原理
 
 来看下`file_put_contents`函数第二个参数data的官网定义:
@@ -68,3 +70,40 @@ if(isset($_POST['content']) && isset($_POST['ext'])){
 
 ?>
 ```
+
+### 对文件名的正则过滤 -- 特殊的文件名写入技巧
+
+对于一些正则绕过:
+```
+$name = $_GET['name'];
+$content = $_GET['content'];
+if(preg_match('/.+\.ph(p[3457]?|t|tml)$/i', $name)){
+	die();
+}
+file_put_contents($name,$content);
+```
+
+绕过方法
+```
+    file_put_contents("1.php/../1.php", 'fff');
+    file_put_contents("2.php/.", 'fff');
+```
+
+原理就是函数内部会对文件名处理，循环删除`./`
+具体参考: http://wonderkun.cc/index.html/?p=626
+
+
+但这种方法的一个缺陷是无论是在windows上还是linux上，每次都只可以创建新文件，不能覆盖老文件。
+
+特殊的写文件名技巧2：
+
+    xxx/../index.php/.
+
+这是在0ctf上面学到的一个姿势
+
+用这个payload可以覆盖掉老文件，但这个方法只在linux下面有效，在window下面无效。 原理就是最后会用`php_stream_stat` 去判断文件是否存在，结果是判断为不存在，因此被当成是新文件去写入了。
+
+具体原理参考: https://www.anquanke.com/post/id/103784
+
+
+
