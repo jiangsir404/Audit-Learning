@@ -1,4 +1,4 @@
-Open_basedir  指令用来限制php只能访问哪些目录,所有php中相关文件读写的函数都会经过  `open_bsaedir` 的检查
+Open_basedir  指令用来限制php只能访问哪些目录,所有php中相关文件读写的函数都会经过  `open_bsaedir` 的检查(但不限制system的命令执行)
 
 设置open_basedir 的方法，在linux下，不同的目录由`:` 分割
 

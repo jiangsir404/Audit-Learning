@@ -16,7 +16,10 @@
 - [ ] move_uploaded_file
 - [ ]  str_shuffle 函数缺陷
 - [ ] unlink漏洞的原理和利用 http://wonderkun.cc/index.html/?cat=1&paged=3
+- [ ] mail函数命令执行
 - [ ] 其他
+
+
 ## 一些资源
 
 ### 代码审计练习题
@@ -42,7 +45,7 @@ Xyntax师傅整理的乌云1000个PHP代码审计案例： https://github.com/Xy
 
 乌云Drops文章备份： https://github.com/SecWiki/wooyun_articles
 
-
+php_code_audit_project： https://github.com/SukaraLin/php_code_audit_project
 
 ### 思维导图，资料集合
 
