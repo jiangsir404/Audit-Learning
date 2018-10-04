@@ -58,9 +58,9 @@ ParseResult(scheme='', netloc='baidu.com:80a', path='', params='', query='', fra
 ## 路径解析tricks
 
 ```
-$url4 = "/upload?/test/";
-$url5 = "//upload?/test/xx/";
-$url6 = "//upload/test/";
+$url4 = "//upload?/test/";
+$url5 = "//upload?/1=1&id=1";
+$url6 = "///upload?id=1";
 
 var_dump(parse_url($url4));
 var_dump(parse_url($url5));
@@ -70,40 +70,29 @@ var_dump(parse_url($url6));
 php7输出结果为:
 ```
 array(2) {
-  'path' =>
-  string(7) "/upload"
-  'query' =>
-  string(6) "/test/"
-}
-/home/lj/bin/php/bin/parse1.php:22:
-array(2) {
   'host' =>
-  string(6) "upload"
-  'query' =>
-  string(9) "/test/xx/"
-}
-/home/lj/bin/php/bin/parse1.php:23:
-array(2) {
-  'host' =>
-  string(6) "upload"
+  string(7) "upload?"
   'path' =>
   string(6) "/test/"
 }
-```
-
-在php5 中对于url5的解析有不一样:
-```
 F:\sublime\php\audit\5\parse2.php:22:
 array(2) {
   'host' =>
   string(7) "upload?"
   'path' =>
-  string(9) "/test/xx/"
+  string(9) "/1=1&id=1"
 }
+F:\sublime\php\audit\5\parse2.php:23:
+bool(false)
 ```
-`upload?`后面的内容被解析出path，而不是query了。
 
-开头`/` 会被解析成path部分，但`//`会被解析成host
+1. `//upload?`如果是`//`, 则被解析成host, 后面的内容如果有`/`,会被解析出path，而不是query了。
+
+这个trick可以用来添加混淆参数，从而可以保护好其他的参数。
+
+2. 如果path部分为`///`，则解析错误，返回False
+
+
 
 python 的urlparse解析也有这个问题
 ```
@@ -186,6 +175,9 @@ array (size=2)
 
 我们只要加一个混淆参数`/1=1` 就可以让parse_url的解析失败。
 
+第二种绕过方式: `http://localhost:83///parse3.php?id=1%27%20union%20select%201,2,3%23` 
+
+我们只需要在path加`///` 三斜杠，就会让parse_url解析失败，导致无法过滤参数。
 
 ### 网鼎杯第三场comein
 ```
@@ -213,7 +205,7 @@ payload:
 
     ..@c7f.zhuque.com/..//index.php
 
-![image](https://note.youdao.com/yws/public/resource/2df4cd8103642ad1db9be19e6b50bbd4/85991F83F52E467CBE72F74628ED7571?ynotemdtimestamp=1538657944827)
+![image](85991F83F52E467CBE72F74628ED7571)
 
 我们来看一下parse_str解析出来的结果:
 
@@ -245,4 +237,4 @@ apache 成功解析出了`/index.php`的内容。而且必须是`..//` 才能解
 > 注意apache,浏览器，parse_uri的解析规则是不一样的，apache的解析规则就是按照请求包里面的host来解析的，但浏览器是按照[scheme]://[user:pass@]host:port/path?key=value#fragment` 这样来解析出来host,然后构造请求包的。 parse_url虽然是依照浏览器的要求来解析的，但也会出现一些问题。
 
 
-
+参考； http://skysec.top/2017/12/15/parse-url%E5%87%BD%E6%95%B0%E5%B0%8F%E8%AE%B0/
