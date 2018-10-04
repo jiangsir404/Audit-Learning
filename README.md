@@ -9,16 +9,17 @@
 - [x] 通用代码审计思路
 - [x] 危险的file_put_contents函数
 - [x] escapeshellarg 和 escapeshellcmd 函数.md
+- [x] parse_url 函数研究
+- [x] 其他
+- [x] 特殊的文件名写入技巧(move_uploaded_file, file_put_contents,copy，readfile,file,fopen 都存在) 
+- [x] mail函数命令执行
 - [ ] disable_functions 绕过研究
-- [ ] parse_url 函数研究
 - [ ] curl 函数研究
 - [ ] addslashes 函数绕过研究
 - [ ] move_uploaded_file
-- [ ]  str_shuffle 函数缺陷
-- [ ] unlink漏洞的原理和利用 http://wonderkun.cc/index.html/?cat=1&paged=3
-- [ ] mail函数命令执行
 - [ ] 其他 [php函数默认配置引发的安全问题](http://skysec.top/2018/08/17/php%E5%87%BD%E6%95%B0%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE%E5%BC%95%E5%8F%91%E7%9A%84%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98/#openssl-verify-%E5%87%BD%E6%95%B0)
-
+- [ ] 误用htmlentities函数引发的漏洞 (http://sec-redclub.com/archives/964/)
+- [ ] filter_var函数缺陷 (http://sec-redclub.com/archives/925/)
 
 
 ## 一些资源
