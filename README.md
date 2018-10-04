@@ -17,7 +17,8 @@
 - [ ]  str_shuffle 函数缺陷
 - [ ] unlink漏洞的原理和利用 http://wonderkun.cc/index.html/?cat=1&paged=3
 - [ ] mail函数命令执行
-- [ ] 其他
+- [ ] 其他 [php函数默认配置引发的安全问题](http://skysec.top/2018/08/17/php%E5%87%BD%E6%95%B0%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE%E5%BC%95%E5%8F%91%E7%9A%84%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98/#openssl-verify-%E5%87%BD%E6%95%B0)
+
 
 
 ## 一些资源
