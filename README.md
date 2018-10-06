@@ -19,7 +19,7 @@
 - [ ] move_uploaded_file
 - [ ] 其他 [php函数默认配置引发的安全问题](http://skysec.top/2018/08/17/php%E5%87%BD%E6%95%B0%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE%E5%BC%95%E5%8F%91%E7%9A%84%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98/#openssl-verify-%E5%87%BD%E6%95%B0)
 - [ ] 误用htmlentities函数引发的漏洞 (http://sec-redclub.com/archives/964/)
-- [ ] filter_var函数缺陷 (http://sec-redclub.com/archives/925/)
+- [x] filter_var函数缺陷 (http://sec-redclub.com/archives/925/)
 
 
 ## 一些资源
