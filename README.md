@@ -32,6 +32,9 @@ wonderkun师傅的ctf web练习题: https://github.com/wonderkun/CTF_web
 
 https://github.com/bowu678/php_bugs
 
+RIPS2017 代码审计练习oj: https://www.ripstech.com/php-security-calendar-2017/
+
+红日安全 RIPS oj 里题解: https://github.com/hongriSec/PHP-Audit-Labs
 
 ### 漏洞exp
 推荐一波自己的仓库： https://github.com/jiangsir404/PHP-code-audit
